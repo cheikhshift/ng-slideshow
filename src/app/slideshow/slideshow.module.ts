@@ -19,7 +19,7 @@ export function reducer(state: any, action: any) {
   imports: [
     CommonModule,
     TruncateModule,
-    StoreModule.provideStore(reducer)
+    StoreModule.forRoot(reducer)
   ],
   declarations: [SlideshowComponent],
   exports: [SlideshowComponent]
